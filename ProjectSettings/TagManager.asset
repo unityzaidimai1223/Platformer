@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Teleporter
   - Coin
+  - Enemy
+  - Spikes
+  - SpikeTrigger
   layers:
   - Default
   - TransparentFX

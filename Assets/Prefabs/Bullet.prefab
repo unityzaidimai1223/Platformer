@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3652701192370768328}
   - component: {fileID: 867673641429743910}
   - component: {fileID: 5794740753188861007}
+  - component: {fileID: 4743048721834004790}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -102,6 +103,7 @@ MonoBehaviour:
   particles: {fileID: 2863199494889318863, guid: c7436cdf76c6349ebae72980c9d9b4b2, type: 3}
   direction: {x: 1, y: 0}
   speed: 20
+  lifeTime: 2
   damageRange: {x: 1, y: 2}
 --- !u!50 &867673641429743910
 Rigidbody2D:
@@ -159,9 +161,24 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.003360629}
   serializedVersion: 2
   m_Radius: 0.294999
+--- !u!114 &4743048721834004790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4411808333731178614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d171bd9168167044398c05ed62932cd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  direction: {x: 0, y: 0, z: 0}
+  speed: 10
+  lifetime: 2
